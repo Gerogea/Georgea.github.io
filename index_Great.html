@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>George Abu-Aqil — Profile</title>
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --link:#0b5fff;
+      --chip:#f3f4f6;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text);}
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Top bar */
+    .topbar{
+      background:#0b1f3a;
+      color:white;
+      padding:14px 18px;
+      font-weight:600;
+      letter-spacing:.3px;
+    }
+    .topbar small{opacity:.8; font-weight:500}
+
+    /* Layout */
+    .wrap{max-width:1100px; margin:0 auto; padding:22px 16px 60px;}
+    .grid{display:grid; grid-template-columns: 1fr; gap:16px;}
+    @media (min-width: 900px){ .grid{grid-template-columns: 360px 1fr;} }
+
+    /* Left profile card */
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+    }
+    .photo{display:flex; justify-content:center; margin-top:6px;}
+    .photo img{width:170px; height:170px; border-radius:10px; object-fit:cover; border:1px solid var(--line);}
+    h1{font-size:24px; margin:14px 0 6px;}
+    .role{color:var(--muted); margin:0 0 12px; line-height:1.4;}
+    .meta{margin:12px 0 0; padding:0; list-style:none; color:var(--muted); line-height:1.6; font-size:14px;}
+    .meta b{color:var(--text); font-weight:600}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;}
+    .chip{background:var(--chip); border:1px solid var(--line); padding:8px 10px; border-radius:999px; font-size:13px;}
+    .chip a{color:var(--text)}
+    .chip a:hover{text-decoration:none}
+    .chip span{color:var(--muted); margin-left:6px}
+
+    /* Right side */
+    .section-nav{
+      position:sticky; top:12px;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:10px;
+      display:flex; flex-wrap:wrap; gap:8px;
+      margin-bottom:14px;
+    }
+    .tab{
+      display:inline-block;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-size:13px;
+      color:var(--text);
+    }
+    .tab:hover{background:var(--chip); text-decoration:none}
+
+    .content{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+    }
+    h2{font-size:18px; margin:6px 0 10px;}
+    .p{color:var(--text); line-height:1.7; margin:0 0 14px;}
+    .muted{color:var(--muted)}
+    .list{margin:0; padding-left:18px; color:var(--text); line-height:1.7;}
+    .divider{border:0; border-top:1px solid var(--line); margin:18px 0;}
+    .footer{margin-top:18px; color:var(--muted); font-size:12px;}
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    PROFILE
+  </div>
+
+  <div class="wrap">
+    <div class="grid">
+
+      <!-- LEFT: Profile card -->
+      <aside class="card">
+        <div class="photo">
+          <img src="me.jpg" alt="George Abu-Aqil">
+        </div>
+
+        <h1>George Abu-Aqil</h1>
+        <p class="role">
+          Postdoctoral Associate<br>
+          Boston University
+        </p>
+
+        <ul class="meta">
+          <li><b>Area:</b> Antimicrobial Resistance, Bacterial Infections, Chemical Imaging, Machine-Learning, Vibrational Microscopy</li>
+          <li><b>Affiliation:</b> Photonics Center / ECE, Boston University</li>
+          <li><b>Location:</b> Boston, Massachusetts, United States</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <div class="muted" style="font-weight:600; margin-bottom:10px;">Websites</div>
+        <div class="chips">
+          <div class="chip"><a href="https://www.linkedin.com/in/george-abu-aqil/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+	  <div class="chip"><a href="https://sites.bu.edu/cheng-group/" target="_blank" rel="noreferrer">BU / Lab Page</a></div>
+	  <div class="chip"><a href="cv.pdf" target="_blank" rel="noreferrer">CV</a><span>PDF</span></div>
+          <div class="chip"><a href="https://scholar.google.com/citations?user=geoI9X4AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a></div>
+          <div class="chip"><a href="https://orcid.org/0000-0002-7532-5833" target="_blank" rel="noreferrer">ORCID</a></div>
+          <div class="chip"><a href="https://www.researchgate.net/profile/George-Abu-Aqil" target="_blank" rel="noreferrer">ResearchGate</a></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="muted" style="font-weight:600; margin-bottom:10px;">Contact</div>
+        <div class="muted" style="line-height:1.7; font-size:14px;">
+          📞 <a href="tel:+18579724307">+1 (857) 972-4307</a><br>
+          ✉️ <a href="mailto:gabuaqil@bu.edu">Gabuaqil@bu.edu</a><br>
+          📍 Boston, MA 02215, USA
+        </div>
+      </aside>
+
+      <!-- RIGHT: Sections -->
+      <main>
+        <nav class="section-nav">
+          <a class="tab" href="#overview">Overview</a>
+          <a class="tab" href="#research">Research</a>
+          <a class="tab" href="#publications">Publications</a>
+          <a class="tab" href="#media">Social/Media</a>
+          <a class="tab" href="#honors">Honors</a>
+          <a class="tab" href="#keywords">Keywords</a>
+          <a class="tab" href="#contact">Contact Info</a>
+        </nav>
+
+        <section id="overview" class="content">
+          <h2>Overview</h2>
+          <p class="p">
+            A postdoctoral associate at Boston University in Prof. Cheng’s group, with a background spanning medical science, microbiology, and optical imaging. Work is conducted at the interface of biology, physics, and data analysis, with a strong emphasis on translating advanced technologies into practical biomedical and clinical applications. Particular motivation lies in research efforts where rigorous science can directly improve patient outcomes.
+          </p>
+
+          <hr class="divider">
+
+          <section id="research">
+            <h2>Research</h2>
+            <p class="p">
+              Current research focuses on widefield fluorescent mid-infrared photothermal microscopy for rapid bacterial susceptibility testing. By integrating vibrational spectroscopy, fluorescence imaging, and quantitative analysis, the goal is to develop fast, information-rich diagnostic approaches to address bacterial infections and antimicrobial resistance. Broader interests include microbial diagnostics, applied spectroscopy, and scalable technologies that bridge fundamental research and real-world clinical use.<br>
+
+		Ongoing efforts emphasize speed, scalability, and clinical relevance, with the long-term aim of enabling rapid, culture-free diagnostics at the point of care.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
+          <section id="publications">
+            <h2>Publications</h2>
+            <ol class="pub-list" reversed>
+
+  <li>
+    <strong>Bond-Selective Imaging via Vibrational Relaxation Encoded Fluorescence</strong>
+    <div class="meta">
+      <span class="muted">The Journal of Physical Chemistry Letters · 2025</span>
+      <a href="https://pubs.acs.org/doi/full/10.1021/acs.jpclett.5c03266">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Early and swift identification of fungal-infection using infrared spectroscopy</strong>
+    <div class="meta">
+      <span class="muted">Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy · 2025</span>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S1386142524012678?via%3Dihub">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Significant reduction of the culturing time required for bacterial identification and antibiotic susceptibility determination by infrared spectroscopy</strong>
+    <div class="meta">
+      <span class="muted">Analytical Methods · 2024</span>
+      <a href="https://pubs.rsc.org/en/content/articlelanding/2024/ay/d4ay00604f">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Infrared spectroscopy-based machine learning algorithms for rapid detection of <em>Klebsiella pneumoniae</em> isolated directly from patients' urine and determining its susceptibility to antibiotics</strong>
+    <div class="meta">
+      <span class="muted">Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy · 2024</span>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S138614252400307X?via%3Dihub">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Quick Detection of Proteus and Pseudomonas in Patients’ Urine and Assessing Their Antibiotic Susceptibility Using Infrared Spectroscopy and Machine Learning</strong>
+    <div class="meta">
+      <span class="muted">Sensors · 2023</span>
+      <a href="https://www.mdpi.com/1424-8220/23/19/8132#app1-sensors-23-08132">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Detection of extended-spectrum β-lactamase-producing bacteria isolated directly from urine by infrared spectroscopy and machine learning</strong>
+    <div class="meta">
+      <span class="muted">Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy · 2023</span>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S1386142523003190?dgcid=coauthor">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Instant detection of extended-spectrum β-lactamase-producing bacteria from the urine of patients using infrared spectroscopy combined with machine learning</strong>
+    <div class="meta">
+      <span class="muted">Analyst · 2023</span>
+      <a href="https://pubs.rsc.org/en/content/articlelanding/2023/an/d2an01897g/unauth">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Fast identification and susceptibility determination of <em>E. coli</em> isolated directly from patients' urine using infrared-spectroscopy and machine learning</strong>
+    <div class="meta">
+      <span class="muted">Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy · 2023</span>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S1386142522010575">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Rapid determination of <em>Proteus mirabilis</em> susceptibility to antibiotics using infrared spectroscopy in tandem with random forest</strong>
+    <div class="meta">
+      <span class="muted">Journal of Biophotonics · 2022</span>
+      <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jbio.202200198">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Culture-independent susceptibility determination of <em>E. coli</em> isolated directly from patients’ urine using FTIR and machine-learning</strong>
+    <div class="meta">
+      <span class="muted">Analyst · 2022</span>
+      <a href="https://pubs.rsc.org/en/content/articlelanding/2022/an/d2an01253g/unauth">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Infra-red spectroscopy combined with machine learning algorithms enables early determination of <em>Pseudomonas aeruginosa</em>’s susceptibility to antibiotics</strong>
+    <div class="meta">
+      <span class="muted">Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy · 2022</span>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S1386142522002281">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Determination of <em>Klebsiella pneumoniae</em> susceptibility to antibiotics using infrared microscopy</strong>
+    <div class="meta">
+      <span class="muted">Analytical Chemistry · 2021</span>
+      <a href="https://pubs.acs.org/doi/full/10.1021/acs.analchem.1c00734">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Rapid detection of <em>Klebsiella pneumoniae</em> producing extended spectrum β-lactamases enzymes by infrared microspectroscopy and machine learning algorithms</strong>
+    <div class="meta">
+      <span class="muted">Analyst · 2021</span>
+      <a href="https://pubs.rsc.org/en/content/articlelanding/2021/an/d0an02182b/unauth">Link</a>
+    </div>
+  </li>
+
+  <li>
+    <strong>Differentiation of <em>Pectobacterium</em> and <em>Dickeya</em> spp. phytopathogens using infrared spectroscopy and machine learning analysis</strong>
+    <div class="meta">
+      <span class="muted">Journal of Biophotonics · 2020</span>
+      <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/jbio.201960156">Link</a>
+    </div>
+  </li>
+
+</ol>
+
+          </section>
+
+          <hr class="divider">
+
+          <section id="honors">
+            <h2>Honors</h2>
+            <ul class="list">
+              <li>Mid-way Negev - Tsin scholarship 2020-2023</li>
+	      <li>Dean Excellence Prize 2022/2023</li>
+	      <li>Best Presentation award at MLE 2022 Conference</li>
+	      <li>Faculty scholarship 2017-2019, 2019-2023</li>
+            </ul>
+          </section>
+
+          <hr class="divider">
+          <section id="conferences">
+            <h2>Conferences</h2>
+
+<ol class="conf-list">
+
+  <li>
+    <strong>AI4ID – Bridging Infection and Artificial Intelligence</strong>
+    <div class="meta">
+      <span class="muted">Jan. 28, 2026 · Cambridge, Massachusetts, USA · Poster Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>Chemical Imaging GRC – Gordon Research Conference on Chemical Imaging</strong>
+    <div class="meta">
+      <span class="muted">Jul. 27–Aug. 1, 2025 · Easton, Massachusetts, USA · Poster Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>Chemical Imaging Workshop – Prof. Ji-Xin Cheng Group</strong>
+    <div class="meta">
+      <span class="muted">Jun. 17–18, 2025 · Boston, Massachusetts, USA · Poster Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>SPEC 2024 – 13th International Conference on Clinical Spectroscopy</strong>
+    <div class="meta">
+      <span class="muted">Jun. 2–6, 2024 · Ioannina, Greece · Poster Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>MedOptics 2023 – 2nd International Conference on Medical Optics</strong>
+    <div class="meta">
+      <span class="muted">Oct. 11-17, 2023 · Oludeniz, Turkey · <strong>Invited Speaker</strong></span>
+    </div>
+  </li>
+
+  <li>
+    <strong>ICAVS 2023 – 12th International Conference on Advanced Vibrational Spectroscopy</strong>
+    <div class="meta">
+      <span class="muted">Aug. 27–Sep. 1, 2023 · Krakow, Poland · Oral Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>INTERM 2023 – 10th International Congress on Microscopy & Spectroscopy</strong>
+    <div class="meta">
+      <span class="muted">Apr. 13–19, 2023 · Oludeniz, Turkey · Poster Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>Retreat 2023 – The Retreat of the Biomedical Research School</strong>
+    <div class="meta">
+      <span class="muted">Jan. 22–23, 2023 · Ma'ale HaHamisha, Israel · Oral Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>ECSBM 2022 – 19th European Conference on Spectroscopy of Biological Molecules</strong>
+    <div class="meta">
+      <span class="muted">Aug. 29–Sep. 1, 2022 · Reims, France · Poster Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>ISM 2022 – 55th Annual Meeting of the Israel Society for Microbiology</strong>
+    <div class="meta">
+      <span class="muted">Jul. 4–5, 2022 · Beer Sheva, Israel · Poster Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>SPEC 2022 – 12th International Conference on Clinical Spectroscopy</strong>
+    <div class="meta">
+      <span class="muted">Jun. 18–23, 2022 · Dublin, Ireland · Oral Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>MLE 2022 – Machine Learning in Engineering</strong>
+    <div class="meta">
+      <span class="muted">Apr. 26, 2022 · Beer-Sheva, Israel · Oral Presentation</span>
+    </div>
+  </li>
+
+  <li>
+    <strong>ECSBM 2019 – 18th European Conference on Spectroscopy of Biological Molecules</strong>
+    <div class="meta">
+      <span class="muted">Aug. 19–22, 2019 · Dublin, Ireland · Poster Presentation</span>
+    </div>
+  </li>
+
+</ol>
+
+
+
+
+
+
+
+
+          </section>
+
+          <hr class="divider">
+
+          <section id="media">
+            <h2>Social/Media</h2>
+            <ul class="list">
+              <li><a href="https://www.linkedin.com/in/george-abu-aqil/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/Gerogea" target="_blank" rel="noreferrer">GitHub</a></li>
+	      <li><a href="https://sites.bu.edu/cheng-group/people/current-members/" target="_blank" rel="noreferrer">Website</a></li>
+            </ul>
+          </section>
+
+          <hr class="divider">
+
+          <section id="keywords">
+            <h2>Keywords</h2>
+            <div class="chips">
+              <div class="chip"><a href="#keywords">Antimicrobial Resistance</a></div>
+              <div class="chip"><a href="#keywords">AST</a></div>
+              <div class="chip"><a href="#keywords">Bacterial Infection</a></div>
+              <div class="chip"><a href="#keywords">Vibrational Microscopy</a></div>
+              <div class="chip"><a href="#keywords">Photothermal Imaging</a></div>
+              <div class="chip"><a href="#keywords">Single-cell Diagnostics</a></div>
+              <div class="chip"><a href="#keywords">Machine Learning</a></div>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <section id="contact">
+            <h2>Contact Info</h2>
+            <p class="p">
+              Email: <a href="mailto:george.amg65@gmail.com">George.amg65@gmail.com</a>
+	      	     , <a href="mailto:gabuaqil@bu.edu">Gabuaqil@bu.edu</a><br>
+              Phone: <a href="tel:+18579724307">+1 (857) 972-4307</a><br>
+              Address: PHO738, Photonics Center, Boston, MA 02215, USA
+            </p>
+          </section>
+
+          <div class="footer">
+            © <span id="y"></span> George Abu-Aqil
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
